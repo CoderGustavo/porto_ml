@@ -8,7 +8,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
 train = pd.read_csv('input/train.csv', index_col='id').reset_index(drop=True)
-test = pd.read_csv('input/test.csv', index_col='id').reset_index(drop=True)
+test = pd.read_csv('input/test.csv').reset_index(drop=True)
 sample_submission = pd.read_csv('input/submission_sample.csv')
 meta = pd.read_csv('input/metadata.csv')
 
